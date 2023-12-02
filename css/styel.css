@@ -1,0 +1,457 @@
+/* ---------------**********------------------------start setup the basic propertis */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none !important;
+    outline: none !important;
+}
+/* main colors */
+:root{
+    --main-color:#2f89fc;
+    --first-color:#2cbcbc;
+    --second-color:#21aac4;
+    --bs-btn-active-bg: #155ebe;
+}
+.main-color{
+    --main-color:#2f89fc;
+}
+html{
+    scroll-padding-top: 81.71px;
+    scroll-behavior: smooth;
+}
+body h2{
+    font-family: 'Indie Flower', cursive;
+}
+.fixed-btu {
+    width:50px;
+    height: 80px;
+    background-color:transparent;
+    border:2px solid var(--main-color);
+    top:500px;
+    left:45%;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    z-index: 2;
+    transform: translate(50px,50px);
+    -webkit-transform: translate(50px,50px);
+    -moz-transform: translate(50px,50px);
+    -ms-transform: translate(50px,50px);
+    -o-transform: translate(50px,50px);
+    transition: all 2;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+.fixed-btu::after{
+    content: "";
+    position: absolute;
+    top:60%;
+    left:45%;
+    width:5px;
+    height: 20px;
+    border-radius: 100vh;
+    background-color: #000;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    animation: fixed-btu 2s infinite;
+    -webkit-animation: fixed-btu 2s infinite;
+}
+@keyframes fixed-btu {
+    0%{ transform:translateY(-20px) ; -webkit-transform:translateY(-20px) ; -moz-transform:translateY(-20px) ; -ms-transform:translateY(-20px) ; -o-transform:translateY(-20px) ; }
+    10%{ transform:translateY(-20) ; -webkit-transform:translateY(-20) ; -moz-transform:translateY(-20) ; -ms-transform:translateY(-20) ; -o-transform:translateY(-20) ; }
+    20%{ transform:translateY(40px) ; -webkit-transform:translateY(-40px) ; -moz-transform:translateY(40px) ; -ms-transform:translateY(40px) ; -o-transform:translateY(40px) ; }
+    40%{ transform:translateY(0) ; -webkit-transform:translateY(0) ; -moz-transform:translateY(0) ; -ms-transform:translateY(0) ; -o-transform:translateY(0) ; }
+}
+.fixed-btu:hover{
+    background-color:var(--main-color);
+}
+
+/* ======>>end main color <<====== */
+/* ---------------**********------------------------end setup the basic propertis */
+/*==============> start navbar styling  <================*/
+nav a h1 span{
+  color:var(--main-color);
+}
+
+nav .nav-underline .nav-link.active{
+    color:rgb(14, 221, 173)!important;
+    font-weight: 900;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:var(--second-color);
+    border-bottom-color: currentcolor;
+}
+nav a.nav-link:hover{
+    color: #fff !important;
+    font-weight: 700px;
+}
+nav a.nav-link{
+    color:#ccc;
+}
+.btn-outline-success{
+    color:#fff;
+    font-weight: 700;
+    border-color: var(--main-color);
+    transition: all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+}
+.btn-outline-success:hover{
+     background-color: var(--main-color);
+     color:#000;
+     opacity: 0.75;
+}
+/*==============> end navbar styling  <================*/
+/* ==============> start section one styling  <================ */
+header{
+    height: 100vh;
+}
+header {
+    background-image:url(../images/bg_1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+header .btu{
+    margin-left:22%;
+    border-radius: 100vh;
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    padding: 10px 30px;
+    border: 1px solid var(--main-color);
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
+    -moz-transition: all 1.5s;
+    -ms-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    color:#000;
+    font-weight: 700;
+}
+header .btu:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+}
+header  .content h2{
+    color:rgb(103, 159, 203);
+}
+/* header .container {
+    margin-top: 10rem;
+    transform: translatey(50px);
+    -webkit-transform: translatey(50px);
+    -moz-transform: translatey(50px);
+    -ms-transform: translatey(50px);
+    -o-transform: translatey(50px);
+}  
+header .container .row .item1{
+    background-color: var(--main-color);
+   
+}
+header .container .row .item2{
+    background-color: var(--second-color);
+} */
+/* ==============> end section one styling  <================ */
+/* ==============> start section two styling  <================ */
+#about .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px !important;
+    font-weight: 900;
+    color: var(--main-color);
+}
+#about .layer::after{
+    content: 'About';
+    /*background-color: #000;
+    */
+    left:40%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 900;
+    opacity:0.2;
+    text-align: center;
+    margin-top: -3rem;
+
+}
+#about .container .row .item-1{
+    background-color: var(--main-color);
+}
+#about .container .row .item-2{
+    background-color: var(--first-color);
+}
+#about .container .row .item-3{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    }
+.btn-secondary{
+    background-color: transparent;
+}
+
+
+.btn-secondary:hover{
+    background-color: #21aac4;
+    color: #000;
+    border-color: #2f89fc;
+}
+/* ==============> end section two styling  <================ */
+/* ==============> start section three styling  <================ */
+#Service .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px !important;
+    font-weight: 900;
+    color: var(--main-color);
+}
+#Service .layer::after{
+    content: 'Service';
+    /*background-color: #000;
+    */
+    left:40%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 900;
+    opacity:0.2;
+    text-align: center;
+    margin-top: -3rem;
+
+}
+#Service .container .row .item .inner{
+    width:5rem;
+    height: 5rem;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition:all 2s ;
+    -webkit-transition:all 2s ;
+    -moz-transition:all 2s ;
+    -ms-transition:all 2s ;
+    -o-transition:all 2s ;
+    margin:20px auto;
+    background-color: #ccccccc6;
+}
+#Service .container .row .item:hover .inner{
+    background-color: var(--main-color);
+    color:#fff;
+}
+#Service .container-fluid .row{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+#Service .container-fluid .row .items .item .icon{
+    width: 4rem;
+    height: 3.5rem;
+    border:2px solid #000;
+    transform: all 1s;
+    -webkit-transform: all 1s;
+    -moz-transform: all 1s;
+    -ms-transform: all 1s;
+    -o-transform: all 1s;
+}
+#Service .container-fluid .row .items .item:hover .icon{
+   background-color:#fff;
+   color:#2cbcbc
+}
+/* ==============> end section three styling  <================ */
+/* ==============> start section four styling  <================ */
+#Doctors .container .item img{
+    width: 150px;
+}
+#Doctors .container .item .coloring-text{
+    color: var(--main-color);
+}
+#Doctors .container .item .icons{
+    opacity: 0;
+    
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+#Doctors .container .item:hover .icons{
+opacity: 1;
+} 
+#Doctors .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px !important;
+    font-weight: 900;
+    color: var(--main-color);
+}
+#Doctors .layer::after{
+    content: 'Doctors';
+    /*background-color: #000;
+    */
+    left:35%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 900;
+    opacity:0.2;
+    text-align: center;
+    margin-top: -3rem;
+
+}
+#Doctors .container-fluid .left{
+    background-color: var(--main-color);
+}
+#Doctors .container-fluid .right{
+    background-image: url(../images/bg_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+#Doctors  h5 {
+/* color: var(--second-color) !important; */
+}
+/* ==============> end section four styling  <================ */
+/* ==============> start section five styling  <================ */
+#Pricing .detalis .h2-style{
+    color: var(--second-color);
+}
+#Pricing .container .row .item span{
+    color:var(--main-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+#Pricing .container .row .item{
+    border: 2px solid #00000036;
+}
+#Pricing .container .row .item .bttu{
+    padding: 10px 30px;
+    border-radius: 100vh;
+    border: 2px solid var(--main-color);
+    -webkit-border-radius: 100vh;
+    -moz-border-radius: 100vh;
+    -ms-border-radius: 100vh;
+    -o-border-radius: 100vh;
+    opacity: 0;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+}
+#Pricing .container .row .item:hover .bttu{
+    opacity: 1;
+}
+#Pricing .container .row .item .bttu:hover{
+    background-color: var(--main-color);
+    color:#fff;
+}
+#Pricing .container .row .item:hover{
+    border-color: var(--main-color);
+}
+/* ==============> end section five styling  <================ */
+/* ==============> start section six styling  <================ */
+#Blog .title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:50px !important;
+    font-weight: 900;
+    color: var(--main-color);
+}
+#Blog .layer::after{
+    content: 'Testim';
+    /*background-color: #000;
+    */
+    left:35%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 900;
+    opacity:0.2;
+    text-align: center;
+    margin-top: -3rem;
+
+}
+#Blog .container  img{
+    width: 150px;
+    margin: auto;
+    margin-top: 50px;
+}
+.carousel-indicators [data-bs-target] {
+    margin-bottom: -40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+}
+/* ==============> end section six styling  <================ */
+/* ==============> stat section seven styling  <================ */
+
+#Contact .container .row .item:hover a{
+    color: #fff;
+}
+#Contact .container .row .links a{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+#Contact .container .row .links:hover a{
+    color:var(--first-color) !important;
+    font-size: 15px;
+    font-weight: 700;
+}
+#Contact img{
+    width: 120px;
+}
+/* ==============> end section seven styling  <================ */
+/* start update in scrollbar  */
+::-webkit-scrollbar{
+    width:15px
+ }
+ ::-webkit-scrollbar-track{
+    background-color:var(--white-color);
+    box-shadow: 10px 10px 10px #ccc inset;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color:var(--first-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+ ::-webkit-scrollbar-thumb:hover{
+    background-color: var(--main-color);
+ }
+ ::-webkit-scrollbar-corner{
+    background-color: #660909;
+ }
+ /* end update in scrollbar  */
+
+
+
